@@ -23,9 +23,6 @@ function CategoryBar() {
             <Nav.Link href="/category/c6" className="text-black">패션잡화</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href="/category/c6" className="text-black">패션의류</Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
             <Nav.Link href="/category/c7" className="text-black">뷰티</Nav.Link>
           </Nav.Item>
           <Nav.Item>
