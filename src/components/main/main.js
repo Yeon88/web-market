@@ -3,7 +3,6 @@ import { useEffect } from "react";
 import { EventBanner } from "../eventBanner/eventBanner";
 import { Product } from "../products/product";
 import { getProducts } from "../../service/fetcher";
-import {ToggleButtonExample} from "../button/button";
 
 export const Main = ({ convertPrice, products, setProducts }) => {
   const sortProduct = (type) => {
@@ -35,8 +34,6 @@ export const Main = ({ convertPrice, products, setProducts }) => {
         <p onClick={() => sortProduct("row")}>낮은 가격</p>
         <p onClick={() => sortProduct("high")}>높은 가격</p>
       </div>
-
-      <ToggleButtonExample />
 
       <main className={styles.flex_wrap}>
         {products.map((product) => {
