@@ -1,32 +1,53 @@
 import Nav from 'react-bootstrap/Nav';
+import { Link as ReactRouterDomLink, useLocation } from "react-router-dom";
+import styled from "styled-components";
+
+const Link = ({ isActive, children, ...props }) => {
+	return <ReactRouterDomLink {...props}>{children}</ReactRouterDomLink>;
+};
+
+const StyledLink = styled(Link)`
+  box-sizing: border-box;
+  display: block;
+  padding: 6px 12px;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration:none;
+  border-radius: 8px;
+  line-height: 1.8;
+  border: 1px solid lightgray;
+  font-weight: ${(props) => (props.isActive ? "bold" : "normal")};
+`;
 
 function CategoryBar() {
+    const { pathname } = useLocation();
+
     return (
       <>
-        <Nav justify variant="tabs" className="justify-content-center p-1 bg-light">
+        <Nav justify variant="tabs">
           <Nav.Item>
-            <Nav.Link href="/category/c1" className="text-black">디자인문구</Nav.Link>
+            <StyledLink to="/category/c1" className="text-black" isActive={pathname === "/category/c1"}>디자인문구</StyledLink>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href="/category/c2" className="text-black">디지털/핸드폰</Nav.Link>
+            <StyledLink to="/category/c2" className="text-black" isActive={pathname === "/category/c2"}>디지털/핸드폰</StyledLink>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href="/category/c3" className="text-black">가구/수납</Nav.Link>
+            <StyledLink to="/category/c3" className="text-black" isActive={pathname === "/category/c3"}>가구/수납</StyledLink>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href="/category/c4" className="text-black">데코/조명</Nav.Link>
+            <StyledLink to="/category/c4" className="text-black" isActive={pathname === "/category/c4"}>데코/조명</StyledLink>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href="/category/c5" className="text-black">키친</Nav.Link>
+            <StyledLink to="/category/c5" className="text-black" isActive={pathname === "/category/c5"}>키친</StyledLink>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href="/category/c6" className="text-black">패션잡화</Nav.Link>
+            <StyledLink to="/category/c6" className="text-black" isActive={pathname === "/category/c6"}>패션잡화</StyledLink>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href="/category/c7" className="text-black">뷰티</Nav.Link>
+            <StyledLink to="/category/c7" className="text-black" isActive={pathname === "/category/c7"}>뷰티</StyledLink>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href="/category/c8" className="text-black">주얼리/시계</Nav.Link>
+            <StyledLink to="/category/c8" className="text-black" isActive={pathname === "/category/c8"}>주얼리/시계</StyledLink>
           </Nav.Item>
         </Nav>
       </>
