@@ -2,67 +2,99 @@
   "products": [
     {
       "id": 1,
-      "name": "마로네 노트북 파우치",
-      "provider": "아이돈케어",
-      "price": 17100,
-      "image": "/images/image001.png",
+      "name": "2022 먼슬리 플래너",
+      "provider": "ARDIUM",
+      "price": 6900,
+      "image": "/images/planner.png",
       "category": "c1"
     },
     {
       "id": 2,
-      "name": "에어팟 키링",
-      "provider": "gorigory",
+      "name": "리무버블 스티커팩",
+      "provider": "Iconic",
       "price": 3000,
-      "image": "/images/image002.png",
+      "image": "/images/sticker.png",
       "category": "c1"
     },
     {
       "id": 3,
-      "name": "폴리폴리 무릎 담요",
-      "provider": "100-QM",
-      "price": 7000,
-      "image": "/images/image003.png",
+      "name": "벽걸이 CD 플레이어",
+      "provider": "tallllst",
+      "price": 39100,
+      "image": "/images/cdplayer.png",
       "category": "c2"
     },
     {
       "id": 4,
-      "name": "아이폰 스티커 팩",
-      "provider": "문구 판매소",
-      "price": 1900,
-      "image": "/images/image004.png",
+      "name": "아이폰 케이스",
+      "provider": "gogocase",
+      "price": 13000,
+      "image": "/images/phonecase.png",
       "category": "c2"
     },
     {
       "id": 5,
-      "name": "개발자 키보드",
-      "provider": "numpy",
-      "price": 99000,
-      "image": "/images/image005.png",
+      "name": "원형 테이블",
+      "provider": "dinodeco",
+      "price": 198000,
+      "image": "/images/table.png",
       "category": "c3"
     },
     {
       "id": 6,
-      "name": "개발자 커스텀 케이블",
-      "provider": "보물보따리",
-      "price": 69000,
-      "image": "/images/image006.png",
+      "name": "무소음 벽시계",
+      "provider": "banana",
+      "price": 23000,
+      "image": "/images/clock.png",
       "category": "c4"
     },
     {
       "id": 7,
-      "name": "문 긁는 고양이",
-      "provider": "집",
-      "price": 1000000,
-      "image": "/images/image007.png",
+      "name": "디퓨저 300ml",
+      "provider": "DAILYCOMMA",
+      "price": 17200,
+      "image": "/images/defuser.png",
       "category": "c4"
     },
     {
       "id": 8,
-      "name": "우당탕탕 인테리어 책",
-      "provider": "우당탕탕",
-      "price": 5900,
-      "image": "/images/image008.png",
+      "name": "액자 프레임 세트",
+      "provider": "Peace by Moonlight",
+      "price": 31900,
+      "image": "/images/frame.png",
       "category": "c4"
+    },
+    {
+      "id": 9,
+      "name": "머그컵",
+      "provider": "DAILYCOMMA",
+      "price": 6500,
+      "image": "/images/cup.png",
+      "category": "c5"
+    },
+    {
+      "id": 10,
+      "name": "데일리 백팩",
+      "provider": "banana",
+      "price": 43000,
+      "image": "/images/bagpack.png",
+      "category": "c6"
+    },
+    {
+      "id": 11,
+      "name": "두피케어 샴푸",
+      "provider": "feelsogood",
+      "price": 36000,
+      "image": "/images/shampoo.png",
+      "category": "c7"
+    },
+    {
+      "id": 12,
+      "name": "링 반지",
+      "provider": "MINIART",
+      "price": 40400,
+      "image": "/images/ring.png",
+      "category": "c8"
     }
   ]
 }

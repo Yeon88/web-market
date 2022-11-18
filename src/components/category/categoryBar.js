@@ -2,8 +2,8 @@ import Nav from 'react-bootstrap/Nav';
 
 function CategoryBar() {
     return (
-        <>
-        <Nav className="justify-content-center">
+      <>
+        <Nav justify variant="tabs" className="justify-content-center p-1 bg-light">
           <Nav.Item>
             <Nav.Link href="/category/c1" className="text-black">디자인문구</Nav.Link>
           </Nav.Item>
@@ -20,7 +20,7 @@ function CategoryBar() {
             <Nav.Link href="/category/c5" className="text-black">키친</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href="/category/c6" className="text-black">패션의류</Nav.Link>
+            <Nav.Link href="/category/c6" className="text-black">패션잡화</Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link href="/category/c7" className="text-black">뷰티</Nav.Link>
