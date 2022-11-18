@@ -13,11 +13,13 @@ export const TopNavigationBar = ({ cart }) => {
   return (
     <header className={styles.header}>
       <div className={styles.inner}>
+      <div className={styles.logo}>
         <Link to="/">
-          <h1 className={styles.logo}>
+          
             <img src="/images/logo.png" alt="logo" />
-          </h1>
+          
         </Link>
+        </div>
       </div>
 
       <div className={styles.menu}>
@@ -32,7 +34,9 @@ export const TopNavigationBar = ({ cart }) => {
         </Form>
        </div>
 
+       <div className={styles.menu}>
        <ShowName />
+       </div>
 
       <div className={styles.menu}>
         <Link to="/cart">
@@ -51,11 +55,6 @@ export const TopNavigationBar = ({ cart }) => {
         </Link>
 
 
-       
-          <div className={styles.mypage}>
-            <img src="/images/icon-user.svg" alt="user" />
-            <span>로그인</span>
-          </div>
         
 
 
