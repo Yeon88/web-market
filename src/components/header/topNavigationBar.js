@@ -1,41 +1,58 @@
 import styles from "./topNavigationBar.module.css";
 import { Link } from "react-router-dom";
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import ShowName from "../showname/showname";
 
 export const TopNavigationBar = ({ cart }) => {
   return (
     <header className={styles.header}>
       <div className={styles.inner}>
+      <div className={styles.logo}>
         <Link to="/">
-          <h1 className={styles.logo}>
+          
             <img src="/images/logo.png" alt="logo" />
-          </h1>
+          
         </Link>
-        <div className={styles.input_wrap}>
-          <input type="text" placeholder="상품을 검색해보세요!" />
-          <img src="/images/icon-search.svg" alt="search" />
         </div>
       </div>
 
       <div className={styles.menu}>
+      <Form className="d-flex">
+      <Form.Control
+              type="search"
+              placeholder="Search"
+              className="me-2"
+              aria-label="Search"
+            />
+            <Button variant="outline-primary">Search</Button>
+        </Form>
+       </div>
+
+       <div className={styles.menu}>
+       <ShowName />
+       </div>
+
+      <div className={styles.menu}>
         <Link to="/cart">
           <div className={styles.shopping_cart}>
-            <img src="/images/icon-shopping-cart.svg" alt="cart" />
+            <img src="/images/icon-shopping-cart.svg" alt="cart" /> 
             <span>장바구니</span>
             {cart.length >= 1 ? (
               <div className={styles.new_shopping_cart}>
                 <p>{cart.length}</p>
+                
               </div>
             ) : (
               ""
             )}
           </div>
         </Link>
-        <Link to="">
-          <div className={styles.mypage}>
-            <img src="/images/icon-user.svg" alt="user" />
-            <span>로그인</span>
-          </div>
-        </Link>
+
+
+        
+
+
       </div>
     </header>
   );
