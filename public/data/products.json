@@ -5,7 +5,7 @@
       "name": "2022 먼슬리 플래너",
       "provider": "ARDIUM",
       "price": 6900,
-      "image": "/images/planner.png",
+      "image": "/images/product/planner.png",
       "category": "c1"
     },
     {
@@ -13,7 +13,7 @@
       "name": "리무버블 스티커팩",
       "provider": "Iconic",
       "price": 3000,
-      "image": "/images/sticker.png",
+      "image": "/images/product/sticker.png",
       "category": "c1"
     },
     {
@@ -21,7 +21,7 @@
       "name": "벽걸이 CD 플레이어",
       "provider": "tallllst",
       "price": 39100,
-      "image": "/images/cdplayer.png",
+      "image": "/images/product/cdplayer.png",
       "category": "c2"
     },
     {
@@ -29,7 +29,7 @@
       "name": "아이폰 케이스",
       "provider": "gogocase",
       "price": 13000,
-      "image": "/images/phonecase.png",
+      "image": "/images/product/phonecase.png",
       "category": "c2"
     },
     {
@@ -37,7 +37,7 @@
       "name": "원형 테이블",
       "provider": "dinodeco",
       "price": 198000,
-      "image": "/images/table.png",
+      "image": "/images/product/table.png",
       "category": "c3"
     },
     {
@@ -45,7 +45,7 @@
       "name": "무소음 벽시계",
       "provider": "banana",
       "price": 23000,
-      "image": "/images/clock.png",
+      "image": "/images/product/clock.png",
       "category": "c4"
     },
     {
@@ -53,7 +53,7 @@
       "name": "디퓨저 300ml",
       "provider": "DAILYCOMMA",
       "price": 17200,
-      "image": "/images/defuser.png",
+      "image": "/images/product/defuser.png",
       "category": "c4"
     },
     {
@@ -61,7 +61,7 @@
       "name": "액자 프레임 세트",
       "provider": "Peace by Moonlight",
       "price": 31900,
-      "image": "/images/frame.png",
+      "image": "/images/product/frame.png",
       "category": "c4"
     },
     {
@@ -69,7 +69,7 @@
       "name": "머그컵",
       "provider": "DAILYCOMMA",
       "price": 6500,
-      "image": "/images/cup.png",
+      "image": "/images/product/cup.png",
       "category": "c5"
     },
     {
@@ -77,7 +77,7 @@
       "name": "데일리 백팩",
       "provider": "banana",
       "price": 43000,
-      "image": "/images/bagpack.png",
+      "image": "/images/product/bagpack.png",
       "category": "c6"
     },
     {
@@ -85,7 +85,7 @@
       "name": "두피케어 샴푸",
       "provider": "feelsogood",
       "price": 36000,
-      "image": "/images/shampoo.png",
+      "image": "/images/product/shampoo.png",
       "category": "c7"
     },
     {
@@ -93,7 +93,135 @@
       "name": "링 반지",
       "provider": "MINIART",
       "price": 40400,
-      "image": "/images/ring.png",
+      "image": "/images/product/ring.png",
+      "category": "c8"
+    },
+    {
+      "id": 13,
+      "name": "형광펜 세트",
+      "provider": "morris",
+      "price": 6480,
+      "image": "/images/product/highlighter.png",
+      "category": "c1"
+    },
+    {
+      "id": 14,
+      "name": "볼펜 (0.7mm)",
+      "provider": "ZEBRA",
+      "price": 1600,
+      "image": "/images/product/pen.png",
+      "category": "c1"
+    },
+    {
+      "id": 15,
+      "name": "블루투스 키보드",
+      "provider": "ENAL",
+      "price": 21500,
+      "image": "/images/product/keyboard.png",
+      "category": "c2"
+    },
+    {
+      "id": 16,
+      "name": "저소음 블루투스 마우스",
+      "provider": "logitech",
+      "price": 21900,
+      "image": "/images/product/mouse.png",
+      "category": "c2"
+    },
+    {
+      "id": 17,
+      "name": "전신거울",
+      "provider": "10space",
+      "price": 29500,
+      "image": "/images/product/mirror.png",
+      "category": "c3"
+    },
+    {
+      "id": 18,
+      "name": "4단 수납선반",
+      "provider": "WIZHOME",
+      "price": 165200,
+      "image": "/images/product/shelf.png",
+      "category": "c3"
+    },
+    {
+      "id": 19,
+      "name": "탁상용 시계",
+      "provider": "DEMIMOOD",
+      "price": 15200,
+      "image": "/images/product/alarmclock.png",
+      "category": "c4"
+    },
+    {
+      "id": 20,
+      "name": "크리스마스 미니트리",
+      "provider": "blsom",
+      "price": 19900,
+      "image": "/images/product/tree.png",
+      "category": "c4"
+    },
+    {
+      "id": 21,
+      "name": "시리얼볼",
+      "provider": "DAILYLIKE",
+      "price": 13430,
+      "image": "/images/product/cerealball.png",
+      "category": "c5"
+    },
+    {
+      "id": 22,
+      "name": "보온병",
+      "provider": "TAFUCO",
+      "price": 24900,
+      "image": "/images/product/thermos.png",
+      "category": "c5"
+    },
+    {
+      "id": 23,
+      "name": "가죽 3단지갑",
+      "provider": "GOLFIA",
+      "price": 30000,
+      "image": "/images/product/wallet.png",
+      "category": "c6"
+    },
+    {
+      "id": 24,
+      "name": "멀티 파우치",
+      "provider": "Ithinkso",
+      "price": 16500,
+      "image": "/images/product/pouch.png",
+      "category": "c6"
+    },
+    {
+      "id": 25,
+      "name": "드라이기",
+      "provider": "JMW",
+      "price": 67800,
+      "image": "/images/product/dryer.png",
+      "category": "c7"
+    },
+    {
+      "id": 26,
+      "name": "립케어 립밤",
+      "provider": "Les_Jeux",
+      "price": 9900,
+      "image": "/images/product/lipbalm.png",
+      "category": "c7"
+    },
+    {
+      "id": 27,
+      "name": "포인트 귀걸이",
+      "provider": "viewlap",
+      "price": 14900,
+      "image": "/images/product/earring.png",
+      "category": "c8"
+    },
+    {
+      "id": 28,
+      "name": "심플 손목시계",
+      "provider": "UAND",
+      "price": 30900,
+      "image": "/images/product/watch.png",
       "category": "c8"
     }
   ]
