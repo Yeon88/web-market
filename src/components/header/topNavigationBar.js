@@ -17,18 +17,6 @@ export const TopNavigationBar = ({ cart }) => {
         </div>
       </div>
 
-      <div className={styles.menu}>
-      <Form className="d-flex">
-      <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="outline-primary">Search</Button>
-        </Form>
-       </div>
-
        <div className={styles.menu}>
        <ShowName />
        </div>
