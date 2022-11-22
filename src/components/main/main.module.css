@@ -6,7 +6,7 @@
 }
 
 .filter > p:not(:last-child)::after {
-  content: "|";
+  content: "";
   padding: 10px;
 }
 
