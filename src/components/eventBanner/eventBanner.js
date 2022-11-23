@@ -83,6 +83,19 @@ export const EventBanner = () => {
         <img src="images/icon-swiper-1.svg" alt="left" />
       </div>
       </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className={styles.banner}
+          src="images/banner07.png"
+          alt="First slide"
+        />
+        <div className={styles.right}>
+        <img src="images/icon-swiper-2.svg" alt="right" />
+      </div>
+      <div className={styles.left}>
+        <img src="images/icon-swiper-1.svg" alt="left" />
+      </div>
+      </Carousel.Item>
     </Carousel>
   );
 

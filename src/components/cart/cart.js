@@ -3,6 +3,7 @@ import { useState } from "react";
 import { CartHeader } from "./cartHeader";
 import { CartList } from "./cartList";
 import { TotalCart } from "./totalCart";
+import { CartProgress } from "./cartProgress";
 
 export const Cart = ({ cart, setCart, convertPrice }) => {
   const [total, setTotal] = useState(0);
@@ -13,6 +14,10 @@ export const Cart = ({ cart, setCart, convertPrice }) => {
   const found = checkLists.map((checkList) =>
     cart.filter((el) => el.id === parseInt(checkList))
   );
+
+  const handelDiscount = () => {
+
+  }
 
   const handleQuantity = (type, id, quantity) => {
     const found = cart.filter((el) => el.id === id)[0];
@@ -90,13 +95,23 @@ export const Cart = ({ cart, setCart, convertPrice }) => {
         </div>
       )}
       {cart.length !== 0 ? (
-        <TotalCart
-          cart={cart}
-          total={total}
-          setTotal={setTotal}
-          convertPrice={convertPrice}
-          found={found}
-        />
+        <>
+          <CartProgress
+            cart={cart}
+            total={total}
+            setTotal={setTotal}
+            convertPrice={convertPrice}
+            found={found}
+          />
+
+          <TotalCart
+            cart={cart}
+            total={total}
+            setTotal={setTotal}
+            convertPrice={convertPrice}
+            found={found}
+          />
+        </>
       ) : (
         ""
       )}
