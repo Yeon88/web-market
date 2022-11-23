@@ -7,6 +7,10 @@ import ShowName from "../showname/showname";
 export const TopNavigationBar = ({ cart }) => {
   return (
     <header className={styles.header}>
+      <div className={styles.menu}>
+       <ShowName />
+       </div>
+
       <div className={styles.inner}>
       <div className={styles.logo}>
         <Link to="/">
@@ -16,10 +20,6 @@ export const TopNavigationBar = ({ cart }) => {
         </Link>
         </div>
       </div>
-
-       <div className={styles.menu}>
-       <ShowName />
-       </div>
 
       <div className={styles.menu}>
         <Link to="/cart">
@@ -36,7 +36,6 @@ export const TopNavigationBar = ({ cart }) => {
             )}
           </div>
         </Link>
-
 
         
 
