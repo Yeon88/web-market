@@ -7,9 +7,35 @@
   margin-top: 80px;
 }
 
-.product {
+.newEtc{
+  margin: auto;
+  margin-top: 50px;
+}
+
+.etc {
   width: 600px;
   height: 600px;
+  display: flex;
+  margin: auto;
+  margin-left: 200px;
+  flex-direction: column;
+  
+}
+
+.cartAlarm {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+
+.product {
+  width: 600px;
+  height: 700px;
   display: flex;
   flex-direction: column;
   margin-right: 50px;
@@ -19,6 +45,10 @@
   width: 100%;
   height: 100%;
   border-radius: 10px;
+}
+
+.product_stock{
+  margin-bottom: 10px;
 }
 
 .product_img img {

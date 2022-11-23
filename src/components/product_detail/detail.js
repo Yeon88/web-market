@@ -2,11 +2,27 @@ import styles from "./detail.module.css";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getProducts } from "../../service/fetcher";
+import Tab from 'react-bootstrap/Tab';
+import Tabs from 'react-bootstrap/Tabs';
+import ProgressBar from 'react-bootstrap/ProgressBar';
+import {
+  TransformComponent,
+  TransformWrapper,
+} from "@pronestor/react-zoom-pan-pinch";
+import Posts from "../Post/Post";
+import Modal from 'react-bootstrap/Modal';
+import Button from 'react-bootstrap/Button';
+import { CircularProgressBar } from "@tomik23/react-circular-progress-bar";
 
 export const Detail = ({ convertPrice, cart, setCart }) => {
   const { id } = useParams();
   const [product, setProduct] = useState({});
   const [count, setCount] = useState(1);
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => {setShow(true);
+    handleCart();
+  }
 
   // 상세페이지에서 물건 수량 조절
   const handleQuantity = (type) => {
@@ -61,7 +77,11 @@ export const Detail = ({ convertPrice, cart, setCart }) => {
         <main className={styles.main}>
           <section className={styles.product}>
             <div className={styles.product_img}>
+              <TransformWrapper>
+              <TransformComponent>
               <img src={product.image} alt="product" />
+              </TransformComponent>
+              </TransformWrapper>
             </div>
           </section>
           <section className={styles.product}>
@@ -74,6 +94,10 @@ export const Detail = ({ convertPrice, cart, setCart }) => {
               </span>
             </div>
 
+            <div className={styles.product_stock}>
+            <p>상품재고</p>
+            <ProgressBar animated now={product.stock/120*100} />
+            </div>
             <div className={styles.delivery}>
               <p>택배배송 / 무료배송</p>
             </div>
@@ -122,15 +146,51 @@ export const Detail = ({ convertPrice, cart, setCart }) => {
               <button className={styles.btn_buy}>바로 구매</button>
               <button
                 className={styles.btn_cart}
-                onClick={() => {
-                  handleCart();
-                }}
+                onClick={handleShow}
               >
                 장바구니
               </button>
             </div>
           </section>
         </main>
+        <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>장바구니 추가</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <div className={styles.cartAlarm}><CircularProgressBar
+  colorCircle="#e6e6e6"
+  colorSlice="#000"
+  number={false}
+  percent={100}
+/>
+<p>장바구니 추가 완료!</p></div>
+</Modal.Body>
+        <Modal.Footer>
+          <Button variant="primary" onClick={handleClose}>
+            닫기
+          </Button>
+        </Modal.Footer>
+      </Modal>
+        <div className={styles.newEtc}>
+        <section className={styles.etc}>
+          <Tabs
+      defaultActiveKey="profile"
+      id="uncontrolled-tab-example"
+      className="mb-3"
+      fill
+    >
+        <Tab eventKey="home" title="상품 상세정보">
+          <div>
+          <Posts />
+          </div>
+        </Tab>
+        <Tab eventKey="profile" title="리뷰">
+                
+        </Tab>
+        </Tabs>
+          </section>
+        </div>
       </>
     )
   );
