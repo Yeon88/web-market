@@ -26,14 +26,14 @@
 .tab_title input[type="checkbox"] {
   width: 20px;
   height: 20px;
-  border: 2px solid #19ce60;
+  border: 2px solid #1967ce;
   border-radius: 50%;
   appearance: none;
   cursor: pointer;
 }
 
 .tab_title input[type="checkbox"]:checked {
-  background: #19ce60;
+  background: #1967ce;
   border: none;
 }
 
@@ -61,14 +61,14 @@
 .cart_product_list input[type="checkbox"] {
   width: 20px;
   height: 20px;
-  border: 2px solid #19ce60;
+  border: 2px solid #1967ce;
   border-radius: 50%;
   appearance: none;
   cursor: pointer;
 }
 
 .cart_product_list input[type="checkbox"]:checked {
-  background: #19ce60;
+  background: #1967ce;
   border: none;
 }
 
@@ -183,7 +183,7 @@
 .cart_product_price .btn_submit {
   width: 130px;
   height: 40px;
-  background: #19ce60;
+  background: #1967ce;
   border-radius: 5px;
   border: none;
   font-weight: 500;
@@ -224,8 +224,31 @@
   margin: 0 auto;
   margin-top: 35px;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   place-items: center;
+}
+
+.progress {
+  max-width: 1280px;
+  height: 30px;
+  background: #f7caca;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 35px;
+}
+
+.progressBar {
+  max-width: 1280px;
+  height: 20px;
+}
+
+.freeOrder {
+  color: #075426;
+  
+}
+
+.order {
+  color: #eb5757;
 }
 
 .total p,
@@ -343,6 +366,48 @@
   width: 20px;
   height: 15px;
   cursor: pointer;
+}
+
+/* orderComplete */
+
+.orderComplete {
+  max-width: 1280px;
+  height: 500px;
+  background: #edf5f8;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 35px;
+  text-align: center;
+  margin-top: 40px;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  place-items: center;
+}
+
+.orderCompleteH1 {
+  background: #edf5f8;
+  color: #075426;
+}
+
+.orderCompleteP {
+  background: #edf5f8;
+}
+
+.orderCompleteB {
+  background: #edf5f8;
+  color: #1967ce;
+}
+
+.btn_submit {
+  width: 130px;
+  height: 40px;
+  background: #1967ce;
+  border-radius: 5px;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
 }
 
 @media (max-width: 1280px) {

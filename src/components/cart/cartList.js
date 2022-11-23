@@ -1,4 +1,8 @@
 import styles from "./cart.module.css";
+import { TotalCart } from "./totalCart";
+import {useRef} from "react"
+import { addDiscount } from "./totalCart";
+import { minusDiscount } from "./totalCart";
 
 export const CartList = ({
   cart,
@@ -8,10 +12,29 @@ export const CartList = ({
   handleRemove,
   handleCheckList,
 }) => {
+  const dis = useRef()
+  const chk = useRef()
+  // const couponClick = () => {
+  //   if(chk.current.checked == true) {
+  //     if(dis.current.innerText == "쿠폰적용") {
+  //       dis.current.innerText = "쿠폰적용취소"
+  //       dis.current.style = "color:red"
+  //     }
+  //     else if(dis.current.innerText == "쿠폰적용취소") {
+  //       dis.current.innerText = "쿠폰적용"
+  //       dis.current.style="color:white"
+  //     }
+  //   } 
+  //   else {
+  //     dis.current.innerText = "쿠폰적용"
+  //     dis.current.style="color:white"
+  //   }
+  // }
   return (
     <section className={styles.cart_product_list}>
       <input
         type="checkbox"
+        ref={chk}
         id={cart.id}
         onChange={(e) => {
           handleCheckList(e.currentTarget.checked, `${cart.id}`);
@@ -54,7 +77,12 @@ export const CartList = ({
 
       <div className={styles.cart_product_price}>
         <p className={styles.total_price}></p>
-        <button className={styles.btn_submit}>주문하기</button>
+        {/* <button ref={dis} id="discount" className={styles.btn_submit} onClick = {() => couponClick()}>
+          쿠폰적용
+        </button>
+        <p></p>
+        <button className={styles.btn_submit}>주문하기</button> */}
+        <p>{convertPrice(cart.price * cart.quantity)}원</p>
       </div>
 
       <div
@@ -66,3 +94,4 @@ export const CartList = ({
     </section>
   );
 };
+

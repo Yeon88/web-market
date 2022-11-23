@@ -9,6 +9,7 @@ import Basket from "./pages/basket";
 import TopButton from "./components/topButton/topButton";
 import CategoryBar from "./components/category/categoryBar";
 import { CategoryMove } from "./components/category/categoryMove";
+import { OrderComplete } from "./components/cart/orderComplete";
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -68,6 +69,12 @@ function App() {
           path="/cart"
           element={
             <Basket cart={cart} setCart={setCart} convertPrice={convertPrice} />
+          }
+        />
+        <Route
+          path="/cart/orderComplete"
+          element={
+            <OrderComplete />
           }
         />
         <Route
