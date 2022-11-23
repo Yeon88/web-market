@@ -143,7 +143,6 @@ export const Detail = ({ convertPrice, cart, setCart }) => {
             </div>
 
             <div className={styles.btn}>
-              <button className={styles.btn_buy}>바로 구매</button>
               <button
                 className={styles.btn_cart}
                 onClick={handleShow}
@@ -186,7 +185,38 @@ export const Detail = ({ convertPrice, cart, setCart }) => {
           </div>
         </Tab>
         <Tab eventKey="profile" title="리뷰">
-                
+          <div className={styles.review}>
+          <CircularProgressBar
+  colorCircle="#e6e6e6"
+  colorSlice="#fd0b0b"
+  number={true}
+  percent={product.review5p/product.totalReview*100}
+/>
+<CircularProgressBar
+  colorCircle="#e6e6e6"
+  colorSlice="#000"
+  number={true}
+  percent={product.review4p/product.totalReview*100}
+/>
+<CircularProgressBar
+  colorCircle="#e6e6e6"
+  colorSlice="#000"
+  number={true}
+  percent={product.review3p/product.totalReview*100}
+/>
+<CircularProgressBar
+  colorCircle="#e6e6e6"
+  colorSlice="#000"
+  number={true}
+  percent={product.review2p/product.totalReview*100}
+/>
+<CircularProgressBar
+  colorCircle="#e6e6e6"
+  colorSlice="#000"
+  number={true}
+  percent={product.review1p/product.totalReview*100}
+/>
+          </div>
         </Tab>
         </Tabs>
           </section>

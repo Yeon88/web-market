@@ -7,7 +7,13 @@
       "price": 6900,
       "image": "/images/product/planner.png",
       "stock": 100,
-      "category": "c1"
+      "category": "c1",
+      "totalReview": 2500,
+      "review5p": 1200,
+      "review4p": 500,
+      "review3p": 400,
+      "review2p": 300,
+      "review1p": 100
     },
     {
       "id": 2,
@@ -16,7 +22,13 @@
       "price": 3000,
       "stock": 100,
       "image": "/images/product/sticker.png",
-      "category": "c1"
+      "category": "c1",
+      "review5p": 1200,
+      "review4p": 500,
+      "review3p": 400,
+      "review2p": 300,
+      "review1p": 100,
+      "totalReview": 2500
     },
     {
       "id": 3,
@@ -25,7 +37,13 @@
       "price": 39100,
       "stock": 100,
       "image": "/images/product/cdplayer.png",
-      "category": "c2"
+      "category": "c2",
+      "review5p": 1200,
+      "review4p": 500,
+      "review3p": 400,
+      "review2p": 300,
+      "review1p": 100,
+      "totalReview": 2500
     },
     {
       "id": 4,
@@ -33,6 +51,12 @@
       "provider": "gogocase",
       "price": 13000,
       "stock": 100,
+      "review5p": 1200,
+      "review4p": 500,
+      "review3p": 400,
+      "review2p": 300,
+      "review1p": 100,
+      "totalReview": 2500,
       "image": "/images/product/phonecase.png",
       "category": "c2"
     },
@@ -42,6 +66,12 @@
       "provider": "dinodeco",
       "price": 198000,
       "stock": 100,
+      "review5p": 1200,
+      "review4p": 500,
+      "review3p": 400,
+      "review2p": 300,
+      "review1p": 100,
+      "totalReview": 2500,
       "image": "/images/product/table.png",
       "category": "c3"
     },
@@ -52,7 +82,13 @@
       "price": 23000,
       "stock": 100,
       "image": "/images/product/clock.png",
-      "category": "c4"
+      "category": "c4",
+      "review5p": 1200,
+      "review4p": 500,
+      "review3p": 400,
+      "review2p": 300,
+      "review1p": 100,
+      "totalReview": 2500
     },
     {
       "id": 7,
@@ -61,7 +97,13 @@
       "price": 17200,
       "stock": 100,
       "image": "/images/product/defuser.png",
-      "category": "c4"
+      "category": "c4",
+      "review5p": 1200,
+      "review4p": 500,
+      "review3p": 400,
+      "review2p": 300,
+      "review1p": 100,
+      "totalReview": 2500
     },
     {
       "id": 8,
@@ -70,7 +112,13 @@
       "price": 31900,
       "stock": 100,
       "image": "/images/product/frame.png",
-      "category": "c4"
+      "category": "c4",
+      "review5p": 1200,
+      "review4p": 500,
+      "review3p": 400,
+      "review2p": 300,
+      "review1p": 100,
+      "totalReview": 2500
     },
     {
       "id": 9,
@@ -79,7 +127,13 @@
       "price": 6500,
       "stock": 100,
       "image": "/images/product/cup.png",
-      "category": "c5"
+      "category": "c5",
+      "review5p": 1200,
+      "review4p": 500,
+      "review3p": 400,
+      "review2p": 300,
+      "review1p": 100,
+      "totalReview": 2500
     },
     {
       "id": 10,
@@ -88,7 +142,13 @@
       "price": 43000,
       "stock": 100,
       "image": "/images/product/bagpack.png",
-      "category": "c6"
+      "category": "c6",
+      "review5p": 1200,
+      "review4p": 500,
+      "review3p": 400,
+      "review2p": 300,
+      "review1p": 100,
+      "totalReview": 2500
     },
     {
       "id": 11,
@@ -97,7 +157,13 @@
       "price": 36000,
       "stock": 100,
       "image": "/images/product/shampoo.png",
-      "category": "c7"
+      "category": "c7",
+      "review5p": 1200,
+      "review4p": 500,
+      "review3p": 400,
+      "review2p": 300,
+      "review1p": 100,
+      "totalReview": 2500
     },
     {
       "id": 12,
@@ -106,7 +172,13 @@
       "price": 40400,
       "stock": 100,
       "image": "/images/product/ring.png",
-      "category": "c8"
+      "category": "c8",
+      "review5p": 1200,
+      "review4p": 500,
+      "review3p": 400,
+      "review2p": 300,
+      "review1p": 100,
+      "totalReview": 2500
     },
     {
       "id": 13,
@@ -115,7 +187,13 @@
       "price": 6480,
       "stock": 100,
       "image": "/images/product/highlighter.png",
-      "category": "c1"
+      "category": "c1",
+      "review5p": 1200,
+      "review4p": 500,
+      "review3p": 400,
+      "review2p": 300,
+      "review1p": 100,
+      "totalReview": 2500
     },
     {
       "id": 14,
@@ -124,7 +202,13 @@
       "price": 1600,
       "stock": 100,
       "image": "/images/product/pen.png",
-      "category": "c1"
+      "category": "c1",
+      "review5p": 1200,
+      "review4p": 500,
+      "review3p": 400,
+      "review2p": 300,
+      "review1p": 100,
+      "totalReview": 2500
     },
     {
       "id": 15,
@@ -133,7 +217,13 @@
       "price": 21500,
       "stock": 100,
       "image": "/images/product/keyboard.png",
-      "category": "c2"
+      "category": "c2",
+      "review5p": 1200,
+      "review4p": 500,
+      "review3p": 400,
+      "review2p": 300,
+      "review1p": 100,
+      "totalReview": 2500
     },
     {
       "id": 16,
@@ -142,7 +232,13 @@
       "price": 21900,
       "stock": 100,
       "image": "/images/product/mouse.png",
-      "category": "c2"
+      "category": "c2",
+      "review5p": 1200,
+      "review4p": 500,
+      "review3p": 400,
+      "review2p": 300,
+      "review1p": 100,
+      "totalReview": 2500
     },
     {
       "id": 17,
@@ -151,7 +247,13 @@
       "price": 29500,
       "stock": 100,
       "image": "/images/product/mirror.png",
-      "category": "c3"
+      "category": "c3",
+      "review5p": 1200,
+      "review4p": 500,
+      "review3p": 400,
+      "review2p": 300,
+      "review1p": 100,
+      "totalReview": 2500
     },
     {
       "id": 18,
@@ -160,7 +262,13 @@
       "price": 165200,
       "stock": 100,
       "image": "/images/product/shelf.png",
-      "category": "c3"
+      "category": "c3",
+      "review5p": 1200,
+      "review4p": 500,
+      "review3p": 400,
+      "review2p": 300,
+      "review1p": 100,
+      "totalReview": 2500
     },
     {
       "id": 19,
@@ -169,7 +277,13 @@
       "price": 15200,
       "stock": 100,
       "image": "/images/product/alarmclock.png",
-      "category": "c4"
+      "category": "c4",
+      "review5p": 1200,
+      "review4p": 500,
+      "review3p": 400,
+      "review2p": 300,
+      "review1p": 100,
+      "totalReview": 2500
     },
     {
       "id": 20,
@@ -178,7 +292,13 @@
       "price": 19900,
       "stock": 100,
       "image": "/images/product/tree.png",
-      "category": "c4"
+      "category": "c4",
+      "review5p": 1200,
+      "review4p": 500,
+      "review3p": 400,
+      "review2p": 300,
+      "review1p": 100,
+      "totalReview": 2500
     },
     {
       "id": 21,
@@ -187,7 +307,13 @@
       "price": 13430,
       "stock": 100,
       "image": "/images/product/cerealball.png",
-      "category": "c5"
+      "category": "c5",
+      "review5p": 1200,
+      "review4p": 500,
+      "review3p": 400,
+      "review2p": 300,
+      "review1p": 100,
+      "totalReview": 2500
     },
     {
       "id": 22,
@@ -196,7 +322,13 @@
       "price": 24900,
       "stock": 100,
       "image": "/images/product/thermos.png",
-      "category": "c5"
+      "category": "c5",
+      "review5p": 1200,
+      "review4p": 500,
+      "review3p": 400,
+      "review2p": 300,
+      "review1p": 100,
+      "totalReview": 2500
     },
     {
       "id": 23,
@@ -205,7 +337,13 @@
       "price": 30000,
       "stock": 100,
       "image": "/images/product/wallet.png",
-      "category": "c6"
+      "category": "c6",
+      "review5p": 1200,
+      "review4p": 500,
+      "review3p": 400,
+      "review2p": 300,
+      "review1p": 100,
+      "totalReview": 2500
     },
     {
       "id": 24,
@@ -214,7 +352,13 @@
       "price": 16500,
       "stock": 100,
       "image": "/images/product/pouch.png",
-      "category": "c6"
+      "category": "c6",
+      "review5p": 1200,
+      "review4p": 500,
+      "review3p": 400,
+      "review2p": 300,
+      "review1p": 100,
+      "totalReview": 2500
     },
     {
       "id": 25,
@@ -223,7 +367,13 @@
       "price": 67800,
       "stock": 100,
       "image": "/images/product/dryer.png",
-      "category": "c7"
+      "category": "c7",
+      "review5p": 1200,
+      "review4p": 500,
+      "review3p": 400,
+      "review2p": 300,
+      "review1p": 100,
+      "totalReview": 2500
     },
     {
       "id": 26,
@@ -232,7 +382,13 @@
       "price": 9900,
       "stock": 100,
       "image": "/images/product/lipbalm.png",
-      "category": "c7"
+      "category": "c7",
+      "review5p": 1200,
+      "review4p": 500,
+      "review3p": 400,
+      "review2p": 300,
+      "review1p": 100,
+      "totalReview": 2500
     },
     {
       "id": 27,
@@ -241,7 +397,13 @@
       "price": 14900,
       "stock": 100,
       "image": "/images/product/earring.png",
-      "category": "c8"
+      "category": "c8",
+      "review5p": 1200,
+      "review4p": 500,
+      "review3p": 400,
+      "review2p": 300,
+      "review1p": 100,
+      "totalReview": 2500
     },
     {
       "id": 28,
@@ -250,7 +412,13 @@
       "price": 30900,
       "stock": 100,
       "image": "/images/product/watch.png",
-      "category": "c8"
+      "category": "c8",
+      "review5p": 1200,
+      "review4p": 500,
+      "review3p": 400,
+      "review2p": 300,
+      "review1p": 100,
+      "totalReview": 2500
     }
   ]
 }
