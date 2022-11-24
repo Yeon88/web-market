@@ -1,10 +1,19 @@
 import React, { useState, useEffect } from 'react'
 import { slice } from 'lodash'
+import bigList from './bigList';
+import List from './List';
 function Posts() {
   const [post, setPost] = useState([])
   const [isCompleted, setIsCompleted] = useState(false)
-  const [index, setIndex] = useState(5)
+  const [index, setIndex] = useState(1)
   const initialPosts = slice(post, 0, index)
+
+  const renderItem = item => (
+    <div style={{ display: "flex" }}>
+    <img src={item.detailImage} />
+    </div>
+    );
+    
   const getData = () => {
     fetch('https://jsonplaceholder.typicode.com/posts')
       .then((res) => res.json())
@@ -12,7 +21,7 @@ function Posts() {
       .catch((e) => console.log(e))
   }
   const loadMore = () => {
-    setIndex(index + 5)
+    setIndex(index + 1)
     console.log(index)
     if (index >= post.length) {
       setIsCompleted(true)
@@ -25,14 +34,14 @@ function Posts() {
   }, [])
   return (
     <div>
-      <h2 className="mb-3">React Js Load More Example</h2>
+      <h2 className="mb-3">상품 상세 정보</h2>
       {initialPosts.map((item) => {
         return (
           <div
             className="mb-3 card bg-primary p-2 text-dark bg-opacity-25"
             key={item.id}
           >
-            <div className="card-body">{item.title}</div>
+            <div className="card-body"><List data={bigList} renderItem={renderItem} /></div>
           </div>
         )
       })}

@@ -1,4 +1,5 @@
 import styles from "./detail.module.css";
+import React from "react";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getProducts } from "../../service/fetcher";
@@ -14,7 +15,10 @@ import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import { CircularProgressBar } from "@tomik23/react-circular-progress-bar";
 
+
+
 export const Detail = ({ convertPrice, cart, setCart }) => {
+
   const { id } = useParams();
   const [product, setProduct] = useState({});
   const [count, setCount] = useState(1);
@@ -24,7 +28,6 @@ export const Detail = ({ convertPrice, cart, setCart }) => {
     handleCart();
   }
 
-  // 상세페이지에서 물건 수량 조절
   const handleQuantity = (type) => {
     if (type === "plus") {
       setCount(count + 1);
@@ -33,8 +36,7 @@ export const Detail = ({ convertPrice, cart, setCart }) => {
       setCount(count - 1);
     }
   };
-
-  // 장바구니에 중복된 물건을 담을 때 사용
+  
   const setQuantity = (id, quantity) => {
     const found = cart.filter((el) => el.id === id)[0];
     const idx = cart.indexOf(found);
@@ -70,7 +72,7 @@ export const Detail = ({ convertPrice, cart, setCart }) => {
       );
     });
   }, [id, product.price]);
-
+  const level = product.stock> 35 ? "success" : "danger";
   return (
     product && (
       <>
@@ -96,7 +98,7 @@ export const Detail = ({ convertPrice, cart, setCart }) => {
 
             <div className={styles.product_stock}>
             <p>상품재고</p>
-            <ProgressBar animated now={product.stock/120*100} />
+            <ProgressBar animated variant={level} now={product.stock/120*100} />
             </div>
             <div className={styles.delivery}>
               <p>택배배송 / 무료배송</p>
@@ -184,42 +186,62 @@ export const Detail = ({ convertPrice, cart, setCart }) => {
           <Posts />
           </div>
         </Tab>
-        <Tab eventKey="profile" title="리뷰">
+        <Tab eventKey="profile" title="상품 만족도">
           <div className={styles.review}>
           <CircularProgressBar
-  colorCircle="#e6e6e6"
-  colorSlice="#fd0b0b"
-  size="120px"
-  number={true}
-  percent={product.review5p/product.totalReview*100}
-/>
-<CircularProgressBar
-  colorCircle="#e6e6e6"
-  colorSlice="#000"
-  number={true}
-  percent={product.review4p/product.totalReview*100}
-/>
-<CircularProgressBar
-  colorCircle="#e6e6e6"
-  colorSlice="#000"
-  number={true}
-  percent={product.review3p/product.totalReview*100}
-/>
-<CircularProgressBar
-  colorCircle="#e6e6e6"
-  colorSlice="#000"
-  number={true}
-  percent={product.review2p/product.totalReview*100}
-/>
-<CircularProgressBar
-  colorCircle="#e6e6e6"
-  colorSlice="#000"
-  number={true}
-  percent={product.review1p/product.totalReview*100}
-/>
+            colorCircle="#e6e6e6"
+            colorSlice="#ff1313"
+            number={true}
+            percent={product.review5p/product.totalReview*100}
+          > 
+          <div style={{ fontSize: "22px",textAlign: "center", padding: "0 35px" }}>
+              매우만족
+            </div>
+          </CircularProgressBar>
+          <CircularProgressBar
+            colorCircle="#e6e6e6"
+            colorSlice="#000"
+            number={true}
+            percent={product.review4p/product.totalReview*100}
+          >
+            <div style={{ fontSize: "22px",textAlign: "center", padding: "0 35px" }}>
+              만족
+            </div>
+          </CircularProgressBar>
+          <CircularProgressBar
+            colorCircle="#e6e6e6"
+            colorSlice="#000"
+            number={true}
+            percent={product.review3p/product.totalReview*100}
+          >
+            <div style={{ fontSize: "22px",textAlign: "center", padding: "0 35px" }}>
+              보통
+            </div>
+          </CircularProgressBar>
+          <CircularProgressBar
+            colorCircle="#e6e6e6"
+            colorSlice="#000"
+            number={true}
+            percent={product.review2p/product.totalReview*100}
+          >
+            <div style={{ fontSize: "22px",textAlign: "center", padding: "0 35px" }}>
+              불 만족
+            </div>
+          </CircularProgressBar>
+          <CircularProgressBar
+            colorCircle="#e6e6e6"
+            colorSlice="#000"
+            number={true}
+            percent={product.review1p/product.totalReview*100}
+          >
+            <div style={{ fontSize: "22px", textAlign: "center", padding: "0 35px" }}>
+              매우 불만족
+            </div>
+          </CircularProgressBar>
           </div>
         </Tab>
         </Tabs>
+
           </section>
         </div>
       </>
