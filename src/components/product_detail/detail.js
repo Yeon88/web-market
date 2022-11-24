@@ -189,6 +189,7 @@ export const Detail = ({ convertPrice, cart, setCart }) => {
           <CircularProgressBar
   colorCircle="#e6e6e6"
   colorSlice="#fd0b0b"
+  size="120px"
   number={true}
   percent={product.review5p/product.totalReview*100}
 />
