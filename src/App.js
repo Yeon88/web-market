@@ -10,6 +10,8 @@ import TopButton from "./components/topButton/topButton";
 import CategoryBar from "./components/category/categoryBar";
 import { CategoryMove } from "./components/category/categoryMove";
 import { OrderComplete } from "./components/cart/orderComplete";
+import ScrollToTop from './components/scroll_top/scrollTop';
+
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -38,6 +40,7 @@ function App() {
 
   return (
     <BrowserRouter>
+    <ScrollToTop />
      <div id="progressBarContainer">
       <div id="progressBar" style={{transform: `scale(${scroll}, 1)`, opacity: `${scroll}`}} />
       </div>
